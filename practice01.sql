@@ -56,12 +56,15 @@ where first_name like 'S%' or first_name like 's';
 
 8.문제
 
-select department_name
+select
+upper(department_name) "부서이름",
+length(department_name) "부서이름개수"
 from departments
 order by length(department_id) desc;
+
 9.문제
 
-select upper(country_id)
+select upper(country_name)
 from countries
 order by country_id asc;
 
